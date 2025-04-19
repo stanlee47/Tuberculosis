@@ -33,13 +33,13 @@ The dataset is stored in CSV format and contains:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/tuberculosis-survival-prediction.git
-    cd tuberculosis-survival-prediction
+    git clone https://github.com/stanlee47/Tuberculosis
+    cd tuberculosis
     ```
 
 2. Install required dependencies:
     ```bash
-    pip install -r requirements.txt
+    pip install -r req.txt
     ```
 
 ---
@@ -49,12 +49,7 @@ The dataset is stored in CSV format and contains:
 1. Prepare your dataset and place it in the project directory as `data.csv`.
 2. Train the model:
     ```bash
-    python train.py
-    ```
-
-3. Predict on new data:
-    ```bash
-    python predict.py --input new_patient_data.csv
+    python src/train.py
     ```
 
 The model will output whether the patient is likely to survive or not, along with the probability.
@@ -68,7 +63,6 @@ The project includes several machine learning algorithms for performance compari
 - Logistic Regression  
 - Random Forest Classifier  
 - Support Vector Machine (SVM)  
-- Gradient Boosting  
 
 Model selection is based on metrics like Accuracy, Precision, Recall, and F1-Score.
 
@@ -78,4 +72,4 @@ Model selection is based on metrics like Accuracy, Precision, Recall, and F1-Sco
 
 The trained models have shown strong predictive power, with the best-performing model achieving high accuracy in predicting survival outcomes on unseen data.  
 
-Evaluation reports and confusion matrices are available in the `results/` directory.
+Evaluation reports and confusion matrices are available in the `model/` directory.
